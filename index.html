@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Clone Airbnb</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  
+  <body>
+    <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+			    Airbnb
+			</h3>
+
+    	<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" id="menu" href="#">Localização</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="menu" href="#">Check-in</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled"  id="menu" href="#">Checkout</a>
+                </li>
+                <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <button id="btnBusca">Ok!</button>
+                </div>
+            </ul>
+            
+		</div>
+    </div>
+    
+    
+    <div class="row" id="logoprincipalrow">
+        <div class="col-md-12">
+            <img  id="logoprincipal" alt="Paisagem" src="https://freesider.com.br/wp-content/uploads/2017/08/mochileiro-de-sucesso.jpg"/>
+        </div>
+    </div>
+ 
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				Hospedagens
+			</h3>
+		</div>
+	</div>
+	
+    <div class="row" id="itens">
+    
+        <div class="col-md-4">
+        <div class="card" style="width: 22rem; top:10%;"> <img class="card-img-top" src="https://lrvimoveis.com.br/wp-content/uploads/2015/11/perspectiva-da-varanda-gourmet-do-graca-lummini-570x314.jpg" alt="IMAGEM PROMOÇÃO">
+            <div class="card-body"><p class="card-text">Apartamento bem localizado</p> <p><b>R$1.000,00</b></p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card" style="width: 22rem; top:10%"> <img class="card-img-top" src="https://cf.bstatic.com/images/hotel/max1024x768/136/136609367.jpg" style="width: 350px; height:199px" alt="Casa">
+        <div class="card-body"><p class="card-text">Casa à beira-mar</p> <p><b>R$500,00</b></p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 22rem; top:10%;"> <img class="card-img-top" src="https://lrvimoveis.com.br/wp-content/uploads/2015/11/perspectiva-da-varanda-gourmet-do-graca-lummini-570x314.jpg" alt="IMAGEM PROMOÇÃO">
+                <div class="card-body"><p class="card-text">Apartamento bem localizado</p> <p><b>R$1.000,00</b></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card" style="width: 22rem; top:20%;"> <img class="card-img-top" src="https://lrvimoveis.com.br/wp-content/uploads/2015/11/perspectiva-da-varanda-gourmet-do-graca-lummini-570x314.jpg" alt="IMAGEM PROMOÇÃO">
+                <div class="card-body"><p class="card-text">Apartamento bem localizado</p> <p><b>R$1.000,00</b></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="col-md-4">
+            <div class="card" style="width: 22rem; top:20%"> <img class="card-img-top" src="https://cf.bstatic.com/images/hotel/max1024x768/136/136609367.jpg" style="width: 350px; height:199px" alt="Casa">
+            <div class="card-body"><p class="card-text">Casa à beira-mar</p> <p><b>R$500,00</b></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; top:20%;"> <img class="card-img-top" src="https://lrvimoveis.com.br/wp-content/uploads/2015/11/perspectiva-da-varanda-gourmet-do-graca-lummini-570x314.jpg" alt="IMAGEM PROMOÇÃO">
+                    <div class="card-body"><p class="card-text">Apartamento bem localizado</p> <p><b>R$1.000,00</b></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quero!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="row" id="rodape">
+                    <div class="col-md-3">
+                        <ul>
+                            <li class="list-item">
+                                <b>SOBRE</b>
+                            </li>
+                            <li class="list-item">
+                                Como funciona o Airbnb
+                            </li>
+                            <li class="list-item">
+                                Newsroom
+                            </li>
+                            <li class="list-item">
+                                Investidores
+                            </li>
+                            <li class="list-item">
+                                Airbnb Plus
+                            </li>
+                            <li class="list-item">
+                                HotelTonight
+                            </li>
+                            <li class="list-item">
+                                Airbnb for Work
+                            </li>
+                            <li class="list-item">
+                                Olimpíadas
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li class="list-item">
+                                <b>COMUNIDADE</b>
+                            </li>
+                            <li class="list-item">
+                                Como funciona o Airbnb
+                            </li>
+                            <li class="list-item">
+                                Newsroom
+                            </li>
+                            <li class="list-item">
+                                Investidores
+                            </li>
+                            <li class="list-item">
+                                Airbnb Plus
+                            </li>
+                            <li class="list-item">
+                                HotelTonight
+                            </li>
+                            <li class="list-item">
+                                Airbnb for Work
+                            </li>
+                            <li class="list-item">
+                                Olimpíadas
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li class="list-item">
+                                <b>ANFITRIÃO</b>
+                            </li>
+                            <li class="list-item">
+                                Como funciona o Airbnb
+                            </li>
+                            <li class="list-item">
+                                Newsroom
+                            </li>
+                            <li class="list-item">
+                                Investidores
+                            </li>
+                            <li class="list-item">
+                                Airbnb Plus
+                            </li>
+                            <li class="list-item">
+                                HotelTonight
+                            </li>
+                            <li class="list-item">
+                                Airbnb for Work
+                            </li>
+                            <li class="list-item">
+                                Olimpíadas
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li class="list-item">
+                                <b>ATENDIMENTO</b>
+                            </li>
+                            <li class="list-item">
+                                Como funciona o Airbnb
+                            </li>
+                            <li class="list-item">
+                                Newsroom
+                            </li>
+                            <li class="list-item">
+                                Investidores
+                            </li>
+                            <li class="list-item">
+                                Airbnb Plus
+                            </li>
+                            <li class="list-item">
+                                HotelTonight
+                            </li>
+                            <li class="list-item">
+                                Airbnb for Work
+                            </li>
+                            <li class="list-item">
+                                Olimpíadas
+                            </li>
+                        </ul>
+                    </div>
+
+            <div class="col-md-12">
+                <p>© 2021 Airbnb, Inc. All rights reserved·Privacidade·Termos·Mapa do site·Informações da empresa ·Português (BR) R$BRL·
+                    <a href="#"><img data-brackets-id='69' src="https://www.flaticon.com/svg/vstatic/svg/2111/2111392.svg?token=exp=1610920862~hmac=c305260e9e1324f47f915a44e9c939b5" style="height:25px; left: 25px;"></a>
+                    <a href="#"><img data-brackets-id='71' src="https://www.flaticon.com/svg/vstatic/svg/2111/2111491.svg?token=exp=1610921105~hmac=97239394a3d6d62218e7da14ddc6b28f" style="height:25px; left: 25px;"></a> 
+                    <a href="#"><img data-brackets-id='73' src="https://www.flaticon.com/svg/vstatic/svg/2111/2111738.svg?token=exp=1610921137~hmac=8ddbb690aeb953600c217c3a9783962a"style="height:25px; left: 25px"></a>
+            </p>
+            </div>
+        </div>     
+	
+
+  </body>
+</html>
